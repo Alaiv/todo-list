@@ -14,7 +14,7 @@ const defaultTodos = [{
 
 const savedTodos = JSON.parse(localStorage.getItem("todos"));
 const state = {
-    todos: Array.isArray(savedTodos) ? savedTodos : defaultTodos
+    todos: Array.isArray(savedTodos) && savedTodos.length ? savedTodos : defaultTodos
 }
 
 const saveTodos = (todos) => {
