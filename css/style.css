@@ -1,0 +1,40 @@
+.container {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.textInp {
+    border: 2px solid teal;
+    outline: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 25px;
+    padding: 5px;
+}
+
+.date {
+    outline: none;
+    border: 2px solid teal;
+    border-radius: 5px;
+    width: 125px;
+    height: 25px;
+    padding: 5px;
+    cursor: text;
+}
+
+.btn {
+    width: 75px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: lightblue;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: turquoise;
+}
