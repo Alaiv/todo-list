@@ -113,12 +113,11 @@ const setEditing = (todoId) => {
 const updateTodo = (todoId, newTitle, newDate) => {
     state.todos.forEach(todo => {
         if (todo.id === todoId) {
-            todo.title = newTitle;
-            todo.dueDate = newDate;
+            todo.title = newTitle || todo.title;
+            todo.dueDate = newDate || todo.dueDate;
             todo.isEditing = false;
         }
     });
-
     saveTodos(state.todos)
     render(state.todos);
 }
